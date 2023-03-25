@@ -18,7 +18,9 @@ const RQSuperheroes = () => {
       <h2 className='text-2xl py-5'>RQSuperheroes</h2>
       <div>
         {data?.data.map((hero) => (
-          <div key={hero.name}>{hero.name}</div>
+          <div key={hero.id}>
+            <a href={`/rq-super-heroes/${hero.id}`}>{hero.name}</a>
+          </div>
         ))}
       </div>
     </>
