@@ -24,6 +24,11 @@
       "name": "the arrow",
       "alterEgo": "Oliver Queen",
       "id": 5
+    },
+    {
+      "name": "iron-man",
+      "alterEgo": "tony stark",
+      "id": 6
     }
   ],
   "friends": [

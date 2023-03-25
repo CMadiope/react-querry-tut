@@ -14,10 +14,16 @@ export const useSuperHeroesData = () => {
 };
 
 export const useAddSuperHeroData = () => {
-  const queryClient = useQueryClient()
+  const queryClient = useQueryClient();
   return useMutation(addSuperHero, {
-    onSuccess: () => {
-      queryClient.invalidateQueries('super-heroes')
-    }
+    onSuccess: (data) => {
+      // queryClient.invalidateQueries('super-heroes')
+      queryClient.setQueryData("super-heroes", (oldQueryData) => {
+        return {
+          ...oldQueryData,
+          data: [...oldQueryData.data, data.data],
+        };
+      });
+    },
   });
 };
