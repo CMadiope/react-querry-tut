@@ -29,6 +29,11 @@
       "name": "iron-man",
       "alterEgo": "tony stark",
       "id": 6
+    },
+    {
+      "name": "mad mas",
+      "alterEgo": "thing ",
+      "id": 7
     }
   ],
   "friends": [
