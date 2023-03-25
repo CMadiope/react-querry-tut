@@ -16,5 +16,19 @@
       "alterego": "Peter Parker"
     }
 
+  ],
+  "friends": [
+    {
+      "id":1,
+      "name":"Chandler Bing"
+    },
+    {
+      "id":2,
+      "name":"Joey Tribiani"
+    },
+    {
+      "id":3,
+      "name":"Rachel Green"
+    }
   ]
 }

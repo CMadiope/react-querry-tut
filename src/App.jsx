@@ -1,10 +1,11 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { QueryClientProvider, QueryClient } from "react-query";
-import {ReactQueryDevtools} from 'react-query/devtools'
+import { ReactQueryDevtools } from "react-query/devtools";
 import Home from "./components/Home";
 import Superheroes from "./components/Superheroes";
 import RQSuperheroes from "./components/RQSuperheroes";
 import RQSuperhero from "./components/RQSuperhero";
+import ParallelQueries from "./components/ParallelQueries";
 
 const queryClient = new QueryClient();
 
@@ -27,12 +28,14 @@ function App() {
         </nav>
         <Router>
           <Routes>
-            <Route path='/rq-super-heroes/:heroId' element={<RQSuperhero/>}>
-              
-            </Route>
+            <Route
+              path='/rq-super-heroes/:heroId'
+              element={<RQSuperhero />}
+            ></Route>
             <Route path='/' element={<Home />} />
             <Route path='/super-heroes' element={<Superheroes />} />
             <Route path='rq-super-heroes' element={<RQSuperheroes />} />
+            <Route path='/rq-parallel' element={<ParallelQueries />} />
           </Routes>
         </Router>
       </div>

@@ -9,3 +9,4 @@ const fetchSuperHero = ({ queryKey }) => {
 export const useSuperHeroData = (heroId) => {
   return useQuery(["super-hero", heroId], fetchSuperHero);
 };
+  
