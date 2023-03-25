@@ -19,6 +19,11 @@
       "name": "the flash",
       "alterEgo": "berry allen",
       "id": 4
+    },
+    {
+      "name": "the arrow",
+      "alterEgo": "Oliver Queen",
+      "id": 5
     }
   ],
   "friends": [
