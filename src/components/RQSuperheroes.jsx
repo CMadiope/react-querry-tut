@@ -7,10 +7,13 @@ return axios.get(" http://localhost:4000/superheroes");
 };
 
 const RQSuperheroes = () => {
-  const { isLoading, data } = useQuery("super-heroes", fetchSuperheroes);
+  const { isLoading, data,isError, error } = useQuery("super-heroes", fetchSuperheroes);
 
   if (isLoading) {
     return <h3>Loading ...</h3>;
+  }
+  if(isError) {
+    return <h2>{error.message}</h2>
   }
 
   return (
