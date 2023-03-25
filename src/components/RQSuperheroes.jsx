@@ -1,19 +1,16 @@
 import React from "react";
-import { useQuery } from "react-query";
-import axios from "axios";
+import { useSuperHeroesData } from "./hooks/useSuperHeroesData";
 
-const fetchSuperheroes = () => {
-return axios.get(" http://localhost:4000/superheroes");
-};
+
 
 const RQSuperheroes = () => {
-  const { isLoading, data,isError, error } = useQuery("super-heroes", fetchSuperheroes);
+  const { isLoading, data, isError, error, isFetching } = useSuperHeroesData()
 
   if (isLoading) {
     return <h3>Loading ...</h3>;
   }
-  if(isError) {
-    return <h2>{error.message}</h2>
+  if (isError) {
+    return <h2>{error.message}</h2>;
   }
 
   return (
@@ -21,7 +18,7 @@ const RQSuperheroes = () => {
       <h2 className='text-2xl py-5'>RQSuperheroes</h2>
       <div>
         {data?.data.map((hero) => (
-          <div key={hero.id}>{hero.name}</div>
+          <div key={hero.name}>{hero.name}</div>
         ))}
       </div>
     </>

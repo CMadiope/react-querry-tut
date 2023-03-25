@@ -4,7 +4,7 @@ import axios from "axios";
 const Superheroes = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [data, setData] = useState([]);
-  const [error, setError] = useState(second)
+  const [error, setError] = useState(null)
 
   useEffect(() => {
     axios.get(" http://localhost:4000/superheroes").then((res) => {
@@ -28,7 +28,7 @@ const Superheroes = () => {
     <div>
       <h2 className="text-xl font-bold">Superheroes Page</h2>
       {data?.map((hero) => {
-        return <div key={hero.id} className='py-1 text-lg'>{hero.name}</div>;
+        return <div key={hero.name} className='py-1 text-lg'>{hero.name}</div>;
       })}
     </div>
   );
