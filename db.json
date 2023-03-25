@@ -14,67 +14,75 @@
       "id": 3,
       "name": "Spider-Man",
       "alterego": "Peter Parker"
+    },
+    {
+      "name": "the flash",
+      "alterEgo": "berry allen",
+      "id": 4
     }
-
   ],
   "friends": [
     {
-      "id":1,
-      "name":"Chandler Bing"
+      "id": 1,
+      "name": "Chandler Bing"
     },
     {
-      "id":2,
-      "name":"Joey Tribiani"
+      "id": 2,
+      "name": "Joey Tribiani"
     },
     {
-      "id":3,
-      "name":"Rachel Green"
+      "id": 3,
+      "name": "Rachel Green"
     }
   ],
-  "users":[
+  "users": [
     {
-      "id":"confidence@gmail.com",
-      "channelId":"codeEvolution"
+      "id": "confidence@gmail.com",
+      "channelId": "codeEvolution"
     }
   ],
-  "channels":[
+  "channels": [
     {
       "id": "codeEvolution",
-      "courses":["react", "vue", "angular"]
+      "courses": [
+        "react",
+        "vue",
+        "angular"
+      ]
     }
   ],
-  "colors":[
+  "colors": [
     {
-      "id":1,
-      "label":"red"
+      "id": 1,
+      "label": "red"
     },
     {
-      "id":2,
-      "label":"blue"
+      "id": 2,
+      "label": "blue"
     },
     {
-      "id":3,
-      "label":"green"
+      "id": 3,
+      "label": "green"
     },
     {
-      "id":4,
-      "label":"yellow"
+      "id": 4,
+      "label": "yellow"
     },
     {
-      "id":5,
-      "label":"black"
+      "id": 5,
+      "label": "black"
     },
     {
-      "id":6,
-      "label":"white"
+      "id": 6,
+      "label": "white"
     },
     {
-      "id":7,
-      "label":"orange"
+      "id": 7,
+      "label": "orange"
     },
     {
-      "id":8,
-      "label":"purple"
+      "id": 8,
+      "label": "purple"
     }
   ]
 }
